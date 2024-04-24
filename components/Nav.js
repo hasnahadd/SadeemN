@@ -30,7 +30,7 @@ const Nav = () => {
     <nav className="flex justify-between items-center px-4 py-2 bg-[#ffffff]  text-black cursor-pointer text-xl font-medium">
       <div>
     
-        <img className="h-[80px] lg:h-[90px]" src="./images/logo.png" alt="logo" />
+        <img className="h-[80px] lg:h-[90px]" src="./Images/logo.png" alt="logo" />
       </div>
       {isMobile ? (
         <div className="flex items-center">
@@ -68,7 +68,7 @@ const Nav = () => {
 
  
       {isMobile && isOpen && (
-        <div className="lg:hidden absolute top-0 left-0 w-full bg-[#f8fffe] p-4">
+        <div className="lg:hidden absolute top-0 left-0 w-full bg-white p-4">
           <div className='flex flex-row justify-end' onClick={closeMenu}>  <MdClose size={30}/></div>
            
           <ul className="flex flex-col space-y-4 ">

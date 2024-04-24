@@ -1,0 +1,202 @@
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { motion } from 'framer-motion'
+import {
+
+    BiHardHat,
+    BiPaintRoll,
+    BiNote,
+    BiBulb,
+    BiLayer,
+    BiOutline
+    
+} from 'react-icons/bi'
+const contentS = {
+    titleS: {
+      S1: "Avec Sadeem réaliser vos idées n'a jamais été aussi simple!",
+      S2: " Nos Services",
+      S3: "Société de Développement des Apps Mobiles , de Développement des Sites Web et  de Développement des ERP",
+    },
+      steps:[
+{
+   number:'01',
+   icon:BiHardHat,
+     title:'Développement des Apps Mobiles',
+
+     desc:'Nous créons des Applications Mobiles optimisées et natives pour les nouvelles versions iOS et Android. afin de les publiés sur le Google Play Store et l App Store d Apple. Nous travaillons avec plusieurs écosystèmes afin de créer un impact maximum pour vos utilisateurs finaux.',
+   btn:{
+
+    href:'#',
+    label:'learn more',
+     }
+
+
+    },
+
+    {
+        number:'02',
+        icon:BiPaintRoll,
+          title:' Développement des Sites Web',
+     
+          desc:'Sadeem informatique est une excellente entreprise de conception de sites Web et de développement web en Algérie Nous développons des site Web personnalisées sur mesure, des applications Web, Des site e-commerce pour lachat en ligne.',
+     btn:{
+     
+         href:'#',
+         label:'learn more',
+     }
+     
+     
+         },
+         {
+            number:'03',
+            icon:BiNote,
+              title:' Société de Développement des ERP',
+         
+              desc:'Sadeem informatique est une excellente entreprise dintégration des logiciels de gestion en Algérie. Nous intégrons un système complet de gestion des ressources pour votre entreprise',
+         btn:{
+         
+             href:'#',
+             label:'learn more',
+         }
+         
+         
+             },
+
+      ],
+      
+      features: 
+[  
+    { icon:BiBulb,
+    title:'Développement des Apps Mobiles',
+    desc:'Notre département du développement dapplications Android offre des solutions dapplications mobiles Android sur mesure pour les marques, les entreprises et les startups .',
+    btn:{
+         
+        href:'#',
+        label:'learn more',
+    }
+
+    },
+    { icon:BiLayer,
+        title:'Développement des Sites Web',
+        desc:'Nous développons des sites Web responsive design et user-friendly afin de sadapter aux différents formats de consultation : ordinateur, tablettes et Smartphones .',
+        btn:{
+             
+            href:'#',
+            label:'learn more',
+        }
+    
+        }, 
+        { icon:BiOutline,
+            title:'Société de Développement des ERP',
+            desc:'Nous intégrons un système complet de gestion des ressources pour votre entreprise. Des modules selon vos besoins pour booster vos ventes, La facturation, comptabilité et automatisez votre processus dachat.',
+            btn:{
+                 
+                href:'#',
+                label:'learn more',
+            }
+        
+            }, 
+    
+]
+
+      
+    }
+  ;
+console.log(contentS.titleS.S2)
+
+const Services = ({ className }) => {
+  return (
+    <section className={`${className}`} >
+      
+<div className='container px-4 mx-auto '>
+    <div className='lg:flex justify-center mb-20 lg:mb-36  '>
+<div className='w-full lg:w-8/12 lg:flex gap-0 items-center'>
+<div className='lg:w-7/12 mb-5 lg:mb-0'>
+{contentS.titleS.S2 && (
+
+<motion.span 
+initial={{ opacity: 0, y: 20 }}
+whileInView={{
+  opacity: 1,
+  y: 0,
+  transition: { duration: 0.5, delay: 0.2 }
+}}
+viewport={{ once: true }}
+
+
+className='uppercase tracking-[3px] text-[15px] mb-5 text-sm inline-block text-gray-500'>{contentS.titleS.S2} </motion.span>
+
+
+)
+
+}
+{contentS.titleS.S1 && (
+
+<motion.h2 
+initial={{ opacity: 0, y: 20 }}
+whileInView={{
+  opacity: 1,
+  y: 0,
+  transition: { duration: 0.5, delay: 0.3 }
+}}
+viewport={{ once: true }}
+
+
+className='text-2xl lg:text-4xl'>
+
+{contentS.titleS.S1}
+
+
+</motion.h2>
+)}
+
+
+</div>
+<div className='lg:w-5/12 self-end'>
+{contentS.titleS.S3 && (
+    <motion.p
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, delay: 0.3 }
+    }}
+    viewport={{ once: true }}
+    className='text-gray-500'>{contentS.titleS.S3}</motion.p>
+
+)}
+    
+</div>
+
+
+</div>
+    </div>
+    <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 -mb-72 lg:w-10/12 mx-auto'>
+
+{contentS.steps.map((step,index) =>{
+return(
+
+<motion.div key={step.title} className='group duration-300 pt-32 pl-10 pr-10 bg-white relative overflow-hidden hover:bg-slate-300 hover:shadow-2xl'>
+
+
+</motion.div>
+
+)
+}
+)}
+
+
+    </div>
+
+</div>
+
+
+
+
+
+    </section>
+  )
+}
+
+export default Services
