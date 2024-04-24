@@ -188,6 +188,34 @@ return(
  whileHover={{y:-10 ,transition:0.1 ,}}
 key={step.title} className='group duration-300 pt-32 pl-10 pr-10 bg-white relative overflow-hidden hover:bg-slate-300 hover:shadow-2xl'>
 
+<span className='text-[200px] inline-block z-[1] font-semibold absolute -top-[120px] opacity-5 left-0
+ leading-0'>{step.number}</span>
+ <div className='absolute top-10 right-10'>
+    <span className='text-3xl text-black duration-300 transtion-all ease-in-out group-hover:text-white'>
+        <step.icon/>
+    </span>
+ </div>
+<div className='relative z-40 flex gap-3 items-start'>
+<div className='font-semibold duration-300 transition-all ease-in-out group-hover:text-white group-hover:text-opacity-50'>
+{step.number}
+
+</div>
+<div>
+    <h3 className=' text-[18px] mb-4 duration-300 transtion-all ease-in-out group-hover:text-white'>
+{step.title}
+    </h3>
+    <p className='text-[15px] text-gray-500 mb-7 duration-300 transtion-all ease-in-out group-hover:text-white'>
+{step.desc}
+
+    </p>
+    <p>
+        
+    </p>
+</div>
+
+</div>
+
+
 
 </motion.div>
 
