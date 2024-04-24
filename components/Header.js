@@ -30,7 +30,7 @@ const Header = ({ className }) => {
 
   return (
     <section className={`${className}`} ref={ref}>
-      <div className='container px-4 mx-auto'>
+      <div className=' px-4 mx-auto'>
         <div className='lg:flex w-full lg:w-10/12 mx-auto h-auto lg:h-screen lg:min-h-[700px] items-center justify-between'>
 
           <div className='lg:w-5/12'>
