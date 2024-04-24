@@ -6,7 +6,7 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1011); 
+      setIsMobile(window.innerWidth <= 1020); 
     };
 
     handleResize();

@@ -7,9 +7,9 @@ import {
     BiHardHat,
     BiPaintRoll,
     BiNote,
-    BiBulb,
-    BiLayer,
-    BiOutline
+    // BiBulb,
+    // BiLayer,
+    // BiOutline
     
 } from 'react-icons/bi'
 const contentS = {
@@ -65,40 +65,7 @@ const contentS = {
 
       ],
       
-      features: 
-[  
-    { icon:BiBulb,
-    title:'Développement des Apps Mobiles',
-    desc:'Notre département du développement dapplications Android offre des solutions dapplications mobiles Android sur mesure pour les marques, les entreprises et les startups .',
-    btn:{
-         
-        href:'#',
-        label:'learn more',
-    }
-
-    },
-    { icon:BiLayer,
-        title:'Développement des Sites Web',
-        desc:'Nous développons des sites Web responsive design et user-friendly afin de sadapter aux différents formats de consultation : ordinateur, tablettes et Smartphones .',
-        btn:{
-             
-            href:'#',
-            label:'learn more',
-        }
-    
-        }, 
-        { icon:BiOutline,
-            title:'Société de Développement des ERP',
-            desc:'Nous intégrons un système complet de gestion des ressources pour votre entreprise. Des modules selon vos besoins pour booster vos ventes, La facturation, comptabilité et automatisez votre processus dachat.',
-            btn:{
-                 
-                href:'#',
-                label:'learn more',
-            }
-        
-            }, 
-    
-]
+      
 
       
     }
@@ -172,7 +139,7 @@ className='text-2xl lg:text-4xl'>
 
 </div>
     </div>
-    <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 -mb-72 lg:w-10/12 mx-auto'>
+    <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 -mb-72 mt-0 mb-11 lg:w-10/12 mx-auto'>
 
 {contentS.steps.map((step,index) =>{
 return(
