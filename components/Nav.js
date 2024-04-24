@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
- import { IoIosMenu } from "react-icons/io";
  import { MdClose } from "react-icons/md";
  import { CiMenuFries } from "react-icons/ci";
 const Nav = () => {

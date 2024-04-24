@@ -177,7 +177,16 @@ className='text-2xl lg:text-4xl'>
 {contentS.steps.map((step,index) =>{
 return(
 
-<motion.div key={step.title} className='group duration-300 pt-32 pl-10 pr-10 bg-white relative overflow-hidden hover:bg-slate-300 hover:shadow-2xl'>
+<motion.div 
+ initial={{ opacity: 0, y: 30 }}
+ whileInView={{
+   opacity: 1,
+   y: 0,
+   transition: { duration: 0.7, delay: 0.3 }
+ }}
+ viewport={{ once: true }}
+ whileHover={{y:-10 ,transition:0.1 ,}}
+key={step.title} className='group duration-300 pt-32 pl-10 pr-10 bg-white relative overflow-hidden hover:bg-slate-300 hover:shadow-2xl'>
 
 
 </motion.div>
