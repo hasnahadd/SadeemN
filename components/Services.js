@@ -24,7 +24,7 @@ const contentS = {
    icon:BiHardHat,
      title:'Développement des Apps Mobiles',
 
-     desc:'Nous créons des Applications Mobiles optimisées et natives pour les nouvelles versions iOS et Android. afin de les publiés sur le Google Play Store et l App Store d Apple. Nous travaillons avec plusieurs écosystèmes afin de créer un impact maximum pour vos utilisateurs finaux.',
+     desc:'Nous créons des Applications Mobiles optimisées et natives pour les nouvelles versions iOS et Android. afin de les publiés sur le Google Play Store et l App Store d Apple.',
    btn:{
 
     href:'#',
@@ -39,7 +39,7 @@ const contentS = {
         icon:BiPaintRoll,
           title:' Développement des Sites Web',
      
-          desc:'Sadeem informatique est une excellente entreprise de conception de sites Web et de développement web en Algérie Nous développons des site Web personnalisées sur mesure, des applications Web, Des site e-commerce pour lachat en ligne.',
+          desc:'Sadeem informatique est une excellente entreprise de conception de sites Web et de développement web en Algérie Nous développons des site Web personnalisées sur mesure.',
      btn:{
      
          href:'#',
@@ -53,7 +53,7 @@ const contentS = {
             icon:BiNote,
               title:' Société de Développement des ERP',
          
-              desc:'Sadeem informatique est une excellente entreprise dintégration des logiciels de gestion en Algérie. Nous intégrons un système complet de gestion des ressources pour votre entreprise',
+              desc:'Sadeem informatique est une excellente entreprise dintégration des logiciels de gestion en Algérie. Nous intégrons un système complet de gestion des ressources ',
          btn:{
          
              href:'#',
@@ -209,7 +209,7 @@ key={step.title} className='group duration-300 pt-32 pl-10 pr-10 bg-white relati
 
     </p>
     <p>
-        
+<Link href={step.btn.href} className='text-[12px] tracking-[2px] uppercase border-b-2 pb-2 inline-block border-black duration-300 transtion-all ease-in-out group-hover:border-white group-hover:text-white'> {step.btn.label}</Link>
     </p>
 </div>
 

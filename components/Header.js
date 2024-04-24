@@ -23,7 +23,7 @@ const Header = ({ className }) => {
     offset: ['start end', 'end start']
   });
 
-  const imgScrol1 = useTransform(scrollYProgress, [0, 1], ['20%', '-20%']);
+  const imgScrol1 = useTransform(scrollYProgress, [0, 1], ['20%', '-40%']);
 //   const imgScrol2 = useTransform(scrollYProgress, [0, 1], ['100%', '50%']);
 
   console.log(content.title.T);
